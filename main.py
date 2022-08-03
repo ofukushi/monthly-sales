@@ -5,7 +5,7 @@ import json
 def get_data_from_yanoshin():
     
     base_url = "https://webapi.yanoshin.jp/webapi/tdnet/list/"
-    condition = "today"
+    condition = "yesterday"
     format = "json"
     query = "limit=False"
     res = requests.get(base_url+condition+'.'+format+'?'+query)
